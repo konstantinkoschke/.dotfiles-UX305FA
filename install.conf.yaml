@@ -1,0 +1,30 @@
+- clean: ['~']
+
+- link:
+    ~/.bash_profile: bash_profile
+    ~/.bashrc: bashrc
+    ~/.bash_logout: bash_logout
+    ~/.config/i3lock:
+        path: config/i3lock/
+        create: true
+    ~/.config/i3:
+        path: config/i3/
+        create: true
+    ~/.config/termite:
+        path: config/termite/
+        create: true
+    ~/.config/wallpaper:
+        path: config/wallpaper/
+        create: true
+    ~/.config/dunst:
+        path: config/dunst/
+        create: true
+    ~/.bash.d:
+        path: bash.d
+        create: true
+    ~/scripts:
+        path: scripts
+        create: true
+    ~/.xinitrc: xinitrc
+    ~/.compton.conf: compton.conf
+
