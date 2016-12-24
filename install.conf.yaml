@@ -27,4 +27,5 @@
         create: true
     ~/.xinitrc: xinitrc
     ~/.compton.conf: compton.conf
+    ~/.Xmodmap: Xmodmap
 

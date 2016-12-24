@@ -22,3 +22,5 @@ export HISTCONTROL=ignoreboth
 export EDITOR=/usr/bin/nano
 
 BROWSER=/usr/bin/xdg-open
+
+#xmodmap .Xmodmap
