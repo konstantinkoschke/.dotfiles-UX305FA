@@ -19,8 +19,8 @@ complete -cf sudo
 export HISTSIZE=10000
 export HISTFILESIZE=${HISTSIZE}
 export HISTCONTROL=ignoreboth
-export EDITOR=/usr/bin/nano
+export EDITOR=/usr/bin/vim
 
 BROWSER=/usr/bin/xdg-open
 
-#xmodmap .Xmodmap
+xmodmap .Xmodmap
