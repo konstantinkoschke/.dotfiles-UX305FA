@@ -185,6 +185,7 @@ bindsym --release Shift+Print exec --no-startup-id "maim -s -p 0 -c 0.96,0.5,0.0
 bindsym $mod+n exec --no-startup-id thunar
 
 assign [class="(?i)thunderbird"]         workspace 8
+assign [class="(?i)Slack"]               workspace 9
 
 bindsym $mod+Shift+h move scratchpad
 bindsym $mod+Shift+s scratchpad show

@@ -28,4 +28,7 @@
     ~/.xinitrc: xinitrc
     ~/.compton.conf: compton.conf
     ~/.Xmodmap: Xmodmap
+    ~/.bash-git-prompt:
+        path: bash-git-prompt
+        create: true
 
