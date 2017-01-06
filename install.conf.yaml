@@ -10,6 +10,7 @@
     ~/.config/i3:
         path: config/i3/
         create: true
+    ~/.i3status.conf: i3status.conf
     ~/.config/termite:
         path: config/termite/
         create: true
