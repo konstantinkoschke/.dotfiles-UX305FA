@@ -4,10 +4,11 @@ set $height 34
 
 
 
+
 font pango:Hack, monospace 12
 
-# Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
+# Use Mouse+Alt to drag floating windows to their wanted position
+floating_modifier Mod1
 
 # start a terminal
 bindsym $mod+Return exec termite
@@ -133,7 +134,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 set $mode_power power
-bindsym Mod1+Control+l mode "$mode_power"
+bindsym $mod+Control+l mode "$mode_power"
 mode "$mode_power" {
     bindsym l mode "default", exec --no-startup-id $HOME/scripts/i3/i3exit lock
     bindsym e mode "default", exec --no-startup-id $HOME/scripts/i3/i3exit logout
