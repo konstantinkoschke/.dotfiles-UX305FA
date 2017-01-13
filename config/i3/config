@@ -5,7 +5,7 @@ set $height 34
 
 
 
-font pango:Hack, monospace 12
+font pango:Hack, FontAwesome 12
 
 # Use Mouse+Alt to drag floating windows to their wanted position
 floating_modifier Mod1
@@ -74,6 +74,10 @@ bindsym $mod+Shift+a focus child
 
 # focus the child container
 #bindsym $mod+d focus child
+
+# move workspace
+bindsym $mod + Mod1 + Left move workspace to output left
+bindsym $mod + Mod1 + Right move workspace to output right
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -190,13 +194,10 @@ assign [class="(?i)Slack"]               workspace 9
 bindsym $mod+Shift+h move scratchpad
 bindsym $mod+Shift+s scratchpad show
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
 bar {
-        status_command i3status
-        position top
+        status_command i3blocks
+	position top
 }
-
 
 
 exec_always --no-startup-id feh --randomize --bg-fill ${HOME}/.config/wallpaper/*

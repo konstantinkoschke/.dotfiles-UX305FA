@@ -10,7 +10,6 @@
     ~/.config/i3:
         path: config/i3/
         create: true
-    ~/.i3status.conf: i3status.conf
     ~/.config/termite:
         path: config/termite/
         create: true
@@ -27,6 +26,8 @@
         path: scripts
         create: true
     ~/.xinitrc: xinitrc
+    ~/.i3blocks.conf: config/i3blocks/config
+    ~/.i3status.conf: config/i3blocks/i3status.conf
     ~/.compton.conf: compton.conf
     ~/.Xmodmap: Xmodmap
     ~/.bash-git-prompt:
