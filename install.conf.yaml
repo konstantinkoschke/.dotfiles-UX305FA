@@ -26,6 +26,8 @@
         path: scripts
         create: true
     ~/.xinitrc: xinitrc
+    ~/.Xresources: Xresources
+    ~/.toprc: toprc
     ~/.i3blocks.conf: config/i3blocks/config
     ~/.i3status.conf: config/i3blocks/i3status.conf
     ~/.compton.conf: compton.conf
