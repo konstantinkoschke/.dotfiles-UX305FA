@@ -32,7 +32,3 @@
     ~/.i3status.conf: config/i3blocks/i3status.conf
     ~/.compton.conf: compton.conf
     ~/.Xmodmap: Xmodmap
-    ~/.bash-git-prompt:
-        path: bash-git-prompt
-        create: true
-
