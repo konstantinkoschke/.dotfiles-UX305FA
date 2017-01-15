@@ -15,7 +15,7 @@ GIT_PROMPT_ONLY_IN_REPO=1
 # GIT_PROMPT_END=...      # uncomment for custom prompt end sequence
 
 # as last entry source the gitprompt script
-# GIT_PROMPT_THEME=Custom # use custom theme specified in file GIT_PROMPT_THEME_FILE (default ~/.git-prompt-colors.sh)
+GIT_PROMPT_THEME=Default_Arch # use custom theme specified in file GIT_PROMPT_THEME_FILE (default ~/.git-prompt-colors.sh)
 # GIT_PROMPT_THEME_FILE=~/.git-prompt-colors.sh
 # GIT_PROMPT_THEME=Solarized # use theme optimized for solarized color scheme
-. ~/.bash-git-prompt/gitprompt.sh
+. /usr/lib/bash-git-prompt/gitprompt.sh
