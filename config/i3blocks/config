@@ -1,6 +1,11 @@
 separator=false
 separator_block_width=5
 
+[output1]
+command=/home/konstantin/scripts/monitor.sh
+interval=60
+signal=4
+
 [battery]
 command=/home/konstantin/scripts/battery.sh
 interval=persist
