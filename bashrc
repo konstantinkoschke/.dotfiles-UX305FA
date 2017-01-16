@@ -18,5 +18,7 @@ complete -cf sudo
 export EDITOR=/usr/bin/vim
 
 BROWSER=/usr/bin/xdg-open
+eval "$(fasd --init auto)"
 
 xmodmap ~/.Xmodmap
+
