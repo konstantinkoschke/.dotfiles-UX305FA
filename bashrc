@@ -20,5 +20,5 @@ export EDITOR=/usr/bin/vim
 BROWSER=/usr/bin/xdg-open
 eval "$(fasd --init auto)"
 
-xmodmap ~/.Xmodmap
+[[ -f ${HOME}/.Xmodmap ]] && xmodmap ~/.Xmodmap
 
