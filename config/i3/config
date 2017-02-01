@@ -154,9 +154,10 @@ mode "$mode_power" {
 bindsym XF86MonBrightnessDown exec --no-startup-id ${HOME}/scripts/backlight.sh -dec 10
 bindsym XF86MonBrightnessUp exec --no-startup-id ${HOME}/scripts/backlight.sh -inc 10
 
-bindsym XF86AudioLowerVolume exec --no-startup-id "amixer set Master 10%-; pkill i3blocks -RTMIN+9"
-bindsym XF86AudioRaiseVolume exec --no-startup-id "amixer set Master 10%+; pkill i3blocks -RTMIN+9"
-bindsym XF86AudioMute exec --no-startup-id "amixer set Master toggle; pkill i3blocks -RTMIN+9"
+#use card 1: -c 1
+bindsym XF86AudioLowerVolume exec --no-startup-id "amixer -c 1 set Master 10%-; pkill i3blocks -RTMIN+9"
+bindsym XF86AudioRaiseVolume exec --no-startup-id "amixer -c 1 set Master 10%+; pkill i3blocks -RTMIN+9"
+bindsym XF86AudioMute exec --no-startup-id "amixer -c 1 set Master toggle; pkill i3blocks -RTMIN+9"
 
 
 set $mode_brightness brightness
