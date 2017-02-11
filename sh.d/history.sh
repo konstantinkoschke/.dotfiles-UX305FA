@@ -1,8 +1,4 @@
-export PROMPT_COMMAND="${PROMPT_COMMAND};history -a"
-
-export HISTSIZE=10000
-export HISTFILESIZE=${HISTSIZE}
-export HISTCONTROL=ignoreboth
-
-
-
+HISTFILE=~/.zhistory
+HISTSIZE=SSAVEHIST=10000
+setopt sharehistory
+setopt extendedhistory

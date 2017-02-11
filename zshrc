@@ -83,3 +83,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+for file i ${HOME}/.sh.d/*.sh
+do
+  source $file
+done
+export EDITOR=/usr/bin/vim
+
+export BROWSER=//usr/bin/xdg-open
+
+[[ -f ${HOME]/.Xmodmap ]] && xmodmap ~/.Xmodmap
