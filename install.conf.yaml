@@ -3,6 +3,7 @@
 - link:
     ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
+    ~/.zshrc: zshrc
     ~/.bash_logout: bash_logout
     ~/.vimrc: vimrc
     ~/.config/i3lock:
@@ -28,6 +29,9 @@
         create: true
     ~/scripts:
         path: scripts
+        create: true
+    ~/.oh-my-zsh:
+        path: oh-my-zsh
         create: true
     ~/.xinitrc: xinitrc
     ~/.Xresources: Xresources
