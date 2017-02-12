@@ -1,9 +1,8 @@
 - clean: ['~']
 
 - link:
-    ~/.bash_profile: bash_profile
-    ~/.bashrc: bashrc
-    ~/.bash_logout: bash_logout
+    ~/.zprofile: zprofile
+    ~/.zshrc: zshrc
     ~/.vimrc: vimrc
     ~/.config/i3lock:
         path: config/i3lock/
@@ -23,11 +22,17 @@
     ~/.config/dunst:
         path: config/dunst/
         create: true
-    ~/.bash.d:
-        path: bash.d
+    ~/.config/fontconfig:
+        path: config/fontconfig/
+        create: true
+    ~/.sh.d:
+        path: sh.d
         create: true
     ~/scripts:
         path: scripts
+        create: true
+    ~/.oh-my-zsh:
+        path: oh-my-zsh
         create: true
     ~/.xinitrc: xinitrc
     ~/.Xresources: Xresources

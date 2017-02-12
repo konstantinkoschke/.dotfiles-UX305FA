@@ -1,5 +1,5 @@
 [options]
-font = Hack 14
+font = DejaVu Sans Mono 14
 clickable_url = false
 dynamic_title = true
 geometry = 1000x600
