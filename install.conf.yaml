@@ -22,6 +22,9 @@
     ~/.config/dunst:
         path: config/dunst/
         create: true
+    ~/.config/fontconfig:
+        path: config/fontconfig/
+        create: true
     ~/.sh.d:
         path: sh.d
         create: true

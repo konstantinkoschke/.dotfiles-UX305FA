@@ -7,6 +7,7 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+POWERLEVEL9K_MODE='awesome-fontconfig'
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -84,12 +85,15 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-for file i ${HOME}/.sh.d/*.sh
+for file in ${HOME}/.sh.d/*.sh
 do
   source $file
 done
+
 export EDITOR=/usr/bin/vim
 
-export BROWSER=//usr/bin/xdg-open
+export BROWSER=/usr/bin/xdg-open
 
-[[ -f ${HOME]/.Xmodmap ]] && xmodmap ~/.Xmodmap
+[[ -f ${HOME}/.Xmodmap ]] && xmodmap ~/.Xmodmap
+
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status load time )
