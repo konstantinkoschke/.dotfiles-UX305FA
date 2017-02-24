@@ -41,3 +41,6 @@
     ~/.i3status.conf: config/i3blocks/i3status.conf
     ~/.compton.conf: compton.conf
     ~/.Xmodmap: Xmodmap
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
