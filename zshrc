@@ -97,3 +97,4 @@ export BROWSER=/usr/bin/xdg-open
 [[ -f ${HOME}/.Xmodmap ]] && xmodmap ~/.Xmodmap
 
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status load time )
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir virtualenv vcs )
