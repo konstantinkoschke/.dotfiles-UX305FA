@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
-set -eu
+set -e
+tmpImageFile=/tmp/screenlocked.png
 
 [[ -z "$(pgrep i3lock)" ]] || exit
-xset dpms force off
-i3lock -n -u -t -i ${HOME}/.config/i3lock/lock.png
+
+maim ${tmpImageFile}
+mogrify -scale 10% -scale 1000% ${tmpImageFile}
+i3lock -i ${tmpImageFile}
+
+sleep 600
+pgrep i3lock && xset dpms force off
