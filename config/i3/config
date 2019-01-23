@@ -157,7 +157,7 @@ bindsym XF86MonBrightnessUp exec --no-startup-id ${HOME}/scripts/backlight.sh -i
 #use card 1: -c 1
 bindsym XF86AudioLowerVolume exec --no-startup-id "amixer -c 1 set Master 10%-; pkill i3blocks -RTMIN+9"
 bindsym XF86AudioRaiseVolume exec --no-startup-id "amixer -c 1 set Master 10%+; pkill i3blocks -RTMIN+9"
-bindsym XF86AudioMute exec --no-startup-id "amixer -c 1 set Master toggle; pkill i3blocks -RTMIN+9"
+bindsym XF86AudioMute exec --no-startup-id "amixer -c 1 set Master toggle; amixer -c 1 set Speaker on;pkill i3blocks -RTMIN+9"
 
 
 set $mode_brightness brightness
@@ -189,7 +189,6 @@ bindsym --release Print exec --no-startup-id "maim -p 0 -c 0.96,0.5,0.09 $HOME/P
 bindsym --release Shift+Print exec --no-startup-id "maim -s -p 0 -c 0.96,0.5,0.09 $HOME/Pictures/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png"
 
 assign [class="(?i)thunderbird"]         workspace 8
-assign [class="(?i)Slack"]               workspace 9
 
 bindsym $mod+Shift+h move scratchpad
 bindsym $mod+Shift+s scratchpad show
